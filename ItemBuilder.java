@@ -1,5 +1,3 @@
-package nl.jordieh.dev.inventorybuilder.inventorybuilder;
-
 import org.bukkit.*;
 import org.bukkit.block.banner.Pattern;
 import org.bukkit.enchantments.Enchantment;
