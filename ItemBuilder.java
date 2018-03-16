@@ -71,6 +71,11 @@ public class ItemBuilder {
         return itemStack;
     }
 
+    public ItemBuilder setUnbreakable(boolean unbreakable) {
+        this.itemMeta.setUnbreakable(unbreakable);
+        return this;
+    }
+
     public ItemBuilder addEnchantment(Enchantment ench, int level) {
         this.itemMeta.addEnchant(ench, level, false);
         return this;
