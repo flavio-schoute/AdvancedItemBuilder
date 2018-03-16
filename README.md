@@ -11,7 +11,13 @@ Easily create [Bukkit](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inven
 * Spawneggs (`ItemBuilder#setEggType(EntityType type)`)
 * MapMeta
 * Leather Armor
-* ~~NMS Support~~
+* ~~NMS Support~~ (Planned)
+
+## Usage
+1. Copy the [ItemBuilder.java](https://github.com/Jordieh/AdvancedItemBuilder/blob/master/ItemBuilder.java) file to your project into a separate class (don't forget to define your package)
+2. See [below](https://github.com/Jordieh/AdvancedItemBuilder#examples) for coding examples
+3. Please do not make edits to the license
+4. You can submit a [pull request](https://github.com/Jordieh/AdvancedItemBuilder/pulls) if you want to add feautures
 
 ## Examples
 **Result**
