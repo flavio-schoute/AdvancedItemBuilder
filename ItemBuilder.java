@@ -181,15 +181,22 @@ public class ItemBuilder {
     public ItemBuilder setName(String name) {
         return this.setDisplayName(name);
     }
+ 
+   public ItemBuilder addWhiteSpaceLore() {
+        addLore(" ");
+        return this;
+   }
 
-    public ItemBuilder setLore(List<String> lore) {
+   public ItemBuilder setLore(List<String> lore) {
         this.itemMeta.setLore(lore);
         return this;
-    }
-
+   }
+   
     public ItemBuilder addLore(String lore) {
         if (this.itemMeta.hasLore()) {
-            this.itemMeta.getLore().add(lore);
+            List<String> lores = this.itemMeta.getLore();
+            lores.add(lore);
+            this.itemMeta.setLore(lores);
         } else {
             this.itemMeta.setLore(Collections.singletonList(lore));
         }
@@ -207,7 +214,7 @@ public class ItemBuilder {
     }
 
     public ItemBuilder addItemFlag(ItemFlag... itemFlags) {
-        this.itemMeta.removeItemFlags(itemFlags);
+        this.itemMeta.addItemFlags(itemFlags);
         return this;
     }
 
